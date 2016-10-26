@@ -2,7 +2,7 @@
 var wins=0;
 var ties=0;
 var loses=0;
-function playAgain(){
+function refresh(){
   var button = document.createElement('button');
   button.innerHTML = 'Play Again?';
   button.onclick = function(){
@@ -13,6 +13,12 @@ function playAgain(){
   // document.getElementById('foobutton').appendChild(button);
   document.body.appendChild(button);
 }
+
+document.getElementById("rock").addEventListener("click", runGame("rock"));
+document.getElementById("paper").addEventListener("click",runGame("paper"));
+document.getElementById("scissors").addEventListener("click", runGame("scissors"));
+document.getElementById("refresh").addEventListener("click", refresh());
+
 
 function runGame(p){
 	var aiWeapon="";
