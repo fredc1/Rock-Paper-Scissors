@@ -14,9 +14,15 @@ function refresh(){
   document.body.appendChild(button);
 }
 
-document.getElementById("rock").addEventListener("click", function(){runGame("rock");});
-document.getElementById("paper").addEventListener("click",runGame("paper"));
-document.getElementById("scissors").addEventListener("click", runGame("scissors"));
+document.getElementById("rock").addEventListener("click", function(){
+	runGame("rock");
+});
+document.getElementById("paper").addEventListener("click",function(){
+	runGame("paper");
+});
+document.getElementById("scissors").addEventListener("click",function(){
+	runGame("scissors");
+});
 
 
 
